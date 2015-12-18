@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,8 +10,9 @@ namespace damacanaapi.Models
     {
         public int Id { get; set; }
         public decimal TotalPrice { get; set; }
-        public DateTime DateTime { get; set; }
-        public List<Product> Cartproducts { get; set; }
 
+        public int ProductId { get; set; }
+
+        public virtual Product Product { get; set; }
     }
 }

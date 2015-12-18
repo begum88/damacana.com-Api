@@ -15,9 +15,12 @@ namespace damacanaapi.Models
 
         public decimal TotalPrice { get; set; }
 
-   
+        public List<Product> PurchaseList { get; set; }
 
 
+        public virtual Product Product { get; set; }
+
+        public virtual Cart Cart { get; set; }
     }
 
 }
